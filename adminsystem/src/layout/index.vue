@@ -1,6 +1,7 @@
 <template>
+  <div class="slide-bar">
   <el-row class="tac">
-    <el-col :span="12">
+    <el-col :span="24">
       <h5>Custom colors</h5>
       <el-menu
         active-text-color="#ffd04b"
@@ -44,6 +45,7 @@
     </el-col>
   </el-row>
   <router-view />
+  </div>
 
 </template>
 
@@ -78,3 +80,10 @@ export default defineComponent({
   },
 });
 </script>
+<style lang="scss" scoped>
+.slide-bar{
+    width:100%;
+    display:flex;
+    height: 100vh;
+}
+</style>
